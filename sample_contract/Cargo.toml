@@ -1,0 +1,25 @@
+[package]
+name = "sample_contractmodified-contract-standards"
+version = "1.0.0"
+authors = ["jack-the-dev <joao@hackachain.io>"]
+edition = "2018"
+categories = ["wasm"]
+description = """
+Sample smart contract for the purpose of showing the ideal code organization
+in a rust smart contract project on the NEAR protocol.
+"""
+
+[profile.release]
+codegen-units = 1
+# s = optimize for binary size ("z" would additionally turn off loop vectorization)
+opt-level = "z"
+# link time optimization
+lto = true
+debug = false
+panic = "abort"
+overflow-checks = true
+
+[dependencies]
+near-sdk = "3.1.0" 
+serde = "1"
+serde_json = "1"
