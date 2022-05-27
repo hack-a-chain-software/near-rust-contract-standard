@@ -15,4 +15,8 @@ pub(crate) const ERR_004: &str = "Sample-App: Contract: fn add_personalized_stru
 
 /// ComplexPersonalizedStruct (complex_personalized_structs folder) errors - code 1
 pub(crate) const ERR_101: &str = "Sample-App: ComplexPersonalizedStruct: fn change_in_map: AccountId not found in account_relationship_map";
+pub(crate) const ERR_102: &str = "Sample-App: ComplexPersonalizedStruct: generic: Method not implemented for this enum variant";
 
+
+/// PersonalizedStructs (personalized_structs.rs) errors - code 2
+pub(crate) const ERR_201: &str = "Sample-App: PersonalizedStruct: fn change_data: method not implemented for this enum variant";
