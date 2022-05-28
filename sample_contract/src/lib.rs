@@ -10,6 +10,7 @@ use crate::personalized_struct::{PersonalizedStruct};
 use crate::errors::{ERR_001, ERR_002, ERR_003, ERR_004};
 
 pub(crate) mod errors;
+pub mod ext_interface;
 pub mod complex_personalized_struct;
 pub mod personalized_struct;
 pub mod actions;
