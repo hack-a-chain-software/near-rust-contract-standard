@@ -17,6 +17,8 @@ errors.rs -> Lists the different error messages that the application uses as con
 
 ext_interface.rs -> implements the interfaces for the cross contract calls performed by the application;  
   
+events.rs -> implements the functions to log events in the application;
+  
 utils.rs -> implements helper functions (not methods for any struct);
   
 internal_struct.rs (must be named after the internal struct being implemented) -> implements an Internal Struct and its methods (note that internal structs should be wrapped in an enum, as explained in internal_structs.md);  
